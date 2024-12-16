@@ -1,0 +1,35 @@
+.mainTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: @font2;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 57.6px;
+    font-size: 45px;
+    gap: 70px;
+    margin: 100px 0 200px 0;
+    &__buttons{
+        margin-top: 30px;
+        &-target{
+            margin-bottom: 46px;
+        }
+        &-btn{
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 21.79px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        &-btn:nth-child(even){
+            background: @red;
+            color: @white;
+            border: none;
+        }
+        &-btn:nth-child(even):hover{
+            background-color: @redHover;
+        }
+    }
+}
